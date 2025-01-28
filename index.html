@@ -1,22 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Idea(changing lives)</title>
-    <link rel ="icon" type ="image/png" href="idea.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDEA (changing lives) </title>
+  <link rel="icon" type="image/png" href="idea.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class ="flex w-full pl-5 space-x-5 pt-5 pb-5 bg-[#F4FF21] shadow-xl">
-        <img src = "idea.png" width = "80" >
-        <ul class="flex space-x-5 pt-2 text-2xl text-gray-700 cursor-pointer">
-            <li class="hover:text-black hover:text-3xl" ><span>Prepaid </span><span class="text-sm">&#x25BC;</span></li>
-            <li class="hover:text-black hover:text-3xl"><span>Postpaid </span><span class="text-sm">&#x25BC;</span></li>
-            <li class="hover:text-black hover:text-3xl"><span>New connection </span><span class="text-sm">&#x25BC;</span></li>
-            <li class="hover:text-black hover:text-3xl"><span>International Roaming </span><span class="text-sm">&#x25BC;</span></li>
-            <li></li>
-        </ul>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="idea.png" alt="Logo" class="w-10 h-10">
+        <h1 class="text-2xl font-bold">IDEA</h1>
+      </div>
+      <nav class="space-x-6 text-gray-700">
+        <a href="#home" class="hover:text-blue-500">Home</a>
+        <a href="#about" class="hover:text-blue-500">About Us</a>
+        <a href="#services" class="hover:text-blue-500">Active Plans</a>
+        <a href="#contact" class="hover:text-blue-500">Contact Us</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-r from-blue-500 to-blue-400 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-extrabold">Fast & Reliable Internet Services</h2>
+      <p class="mt-4 text-lg">Stay connected with the best internet plans tailored for you.</p>
+      <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+      <p class="mt-4 text-gray-600">We are committed to delivering high-speed internet services to households and businesses. With cutting-edge technology and exceptional customer service, we ensure a seamless browsing experience for our customers.</p>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">Our Plans</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <!-- Plan 1 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-xl font-semibold text-blue-500">Basic Plan</h3>
+          <p class="mt-4 text-gray-600">50 Mbps Speed</p>
+          <p class="mt-2 text-gray-800 font-bold">299/month</p>
+        </div>
+        <!-- Plan 2 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-xl font-semibold text-blue-500">Standard Plan</h3>
+          <p class="mt-4 text-gray-600">100 Mbps Speed</p>
+          <p class="mt-2 text-gray-800 font-bold">399/month</p>
+        </div>
+        <!-- Plan 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-xl font-semibold text-blue-500">Premium Plan</h3>
+          <p class="mt-4 text-gray-600">200 Mbps Speed</p>
+          <p class="mt-2 text-gray-800 font-bold">499/month</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">Contact Us</h2>
+      <div class="mt-8 max-w-lg mx-auto">
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea id="message" name="message" rows="4" required
+              class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600">Send
+            Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Idea internet service provider. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
