@@ -18,14 +18,33 @@
         <img src="idea.png" alt="Logo" class="w-10 h-10">
         <h1 class="text-2xl font-bold">IDEA</h1>
       </div>
-      <nav class="space-x-6 text-gray-700">
+      <nav class="space-x-6 text-gray-700 hidden md:flex">
         <a href="#home" class="hover:text-blue-500">Home</a>
         <a href="#about" class="hover:text-blue-500">About Us</a>
         <a href="#services" class="hover:text-blue-500">Active Plans</a>
         <a href="#contact" class="hover:text-blue-500">Contact Us</a>
       </nav>
+      
+      <!-- Hamburger Icon for Mobile -->
+      <div class="md:hidden flex items-center" id="hamburger">
+        <button class=" p-3">
+          <span class="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+          <span class="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+          <span class="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+        </button>
+      </div>
     </div>
   </header>
+  
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden" id="mobile-menu">
+    <ul class="bg-gray-800 text-white py-4">
+      <li><a href="#home" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
+      <li><a href="#about" class="block px-4 py-2 hover:bg-gray-700">About</a></li>
+      <li><a href="#services" class="block px-4 py-2 hover:bg-gray-700">Active Plans</a></li>
+      <li><a href="#contact" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
+    </ul>
+  </div>
 
   <!-- Hero Section -->
   <section id="home" class="bg-gradient-to-r from-blue-500 to-blue-400 text-white py-16">
@@ -36,11 +55,79 @@
     </div>
   </section>
 
+  <div class="bg-gray-100 flex justify-center items-center pt-10">
+
+    <div class="max-w-4xl w-full flex flex-col md:flex-row gap-8 bg-white p-6 rounded-xl shadow-lg">
+        <div class="flex-1 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-900">recharge <br> and pay bill</h2>
+            <div class="mt-4 flex items-center border border-gray-300 rounded-lg p-2">
+                <input type="text" placeholder="enter mobile number" class="w-full outline-none text-gray-600 bg-transparent">
+                <button class="bg-black text-white p-2 rounded-lg">
+                    ▶
+                </button>
+            </div>
+        </div>
+
+        <!-- New to Vi? Section -->
+        <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-900">new to IDEA?</h3>
+            <p class="text-gray-600">get IDEA SIM delivered free</p>
+            
+            <!-- Service Options -->
+            <div class="mt-4 grid grid-cols-2 gap-4">
+                <div class="flex flex-col items-center bg-orange-50 p-4 rounded-lg shadow">
+                    <img src="idea2.png" alt="Prepaid SIM" width="30px">
+                    <p class="text-sm text-gray-700 mt-2">buy prepaid sim</p>
+                </div>
+
+                <div class="flex flex-col items-center bg-blue-50 p-4 rounded-lg shadow">
+                    <img src="pic4.jpg.png" alt="Postpaid SIM" height="20px">
+                    <p class="text-sm text-gray-700 mt-2">buy postpaid sim</p>
+                </div>
+
+                <div class="flex flex-col items-center bg-red-50 p-4 rounded-lg shadow">
+                    <img src="pic5.png" alt="Port to IDEA">
+                    <p class="text-sm text-gray-700 mt-2">port to IDEA</p>
+                </div>
+
+                <div class="flex flex-col items-center bg-yellow-50 p-4 rounded-lg shadow">
+                    <img src="pic3.png" alt="Fancy Number">
+                    <p class="text-sm text-gray-700 mt-2">buy fancy number</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
   <!-- About Us Section -->
   <section id="about" class="py-16">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
-      <p class="mt-4 text-gray-600">We are committed to delivering high-speed internet services to households and businesses. With cutting-edge technology and exceptional customer service, we ensure a seamless browsing experience for our customers.</p>
+      <p class="mt-4">
+        At <b>Idea Internet Service Providers</b>, we are committed to transforming the way India connects to the digital world. With a legacy of trust and excellence, we deliver high-speed internet solutions tailored to meet the evolving needs of households, businesses, and communities.
+        Our journey began with a vision to bridge the digital divide and make seamless internet connectivity accessible to every corner of the country. Today, we are proud to be one of India’s leading internet service providers, empowering millions of users with cutting-edge technology and reliable service.
+        <br><br>
+        <strong class="text-l">Why Choose Us?</strong>
+        <br>
+        <b>Lightning-Fast Speeds</b>: Experience uninterrupted streaming, gaming, and browsing with speeds up to 1 Gbps.
+        <br>
+        <b>Affordable Plans</b>: Flexible pricing to suit every budget, from individuals to large enterprises.
+        <br>
+        <b>Pan-India Coverage</b>: A robust network infrastructure that ensures connectivity in urban and rural areas alike.
+        <br>
+        <b>24/7 Customer Support</b>: Our dedicated support team is always ready to assist you with any issues or queries.
+        <br>
+        <b>Innovation-Driven</b>: With state-of-the-art technology and a focus on innovation, we continuously enhance our services to meet the demands of the digital age.
+        <br><br>
+        <strong>Our Vision</strong>
+        <br>
+        To create a digitally connected India where every individual and organization can unlock their full potential through reliable, high-speed internet.
+        <br><br>
+        <strong>Our Mission</strong>
+        <br>
+        To deliver world-class internet services that are accessible, affordable, and dependable, fostering a culture of growth, innovation, and inclusivity.
+        
+        Join us as we continue to pave the way for a smarter, more connected India. Whether you're working from home, streaming your favorite content, or managing a business, Idea Internet Service Providers is here to power your digital lifestyle.</p>
     </div>
   </section>
 
@@ -106,6 +193,16 @@
       <p>&copy; 2025 Idea internet service provider. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
 </body>
 
 </html>
